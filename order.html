@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="./styles/styling.css">
+<title>ORDER</title>
+</head>
+<body>
+<div id="page">
+	<div id="sidebar">
+		<img id="sweggaImg" src="./images/swegga.jpg" alt="swegga.jpg" width="150px" height="350px">
+	</div>
+
+	<div id="banner">
+		<img id="deliveryImg" src="./images/delivery.gif" alt="delivery.gif" width="300px" height="85px">
+	</div>
+
+	<div id="navigation">
+		<img src="./images/links.gif" alt="links.gif" usemap="#navmap" width="560px" height="56px">
+		<map name="navmap">
+            <area shape="rect" coords="10,5,95,35" href="order.html" target="_blank" alt="Home">
+            <area shape="rect" coords="105,5,190,35" href="services.html" target="_blank" alt="Services">
+            <area shape="rect" coords="205,5,300,35" href="products.html" target="_blank" alt="Products">
+            <area shape="rect" coords="310,5,440,35" href="orderStatus.html" target="_blank" alt="Order Status">
+            <area shape="rect" coords="450,5,555,35" href="contactUs.html" target="_blank" alt="Contact Us">
+        </map>
+	</div>
+
+	<div id="main">
+		<form name="orders">
+			<!-- <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td><a href="#">Female Ski Jackets</a></td>
+                    <td>
+                        <select name="size1">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="color1">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </td>
+                    <td>150.95</td>
+                    <td><input type="number" name="quantity1" value="2"></td>
+                    <td>R 301.90</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Male Ski Jackets</a></td>
+                    <td>
+                        <select name="size2">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="color2">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </td>
+                    <td>180.95</td>
+                    <td><input type="number" name="quantity2" value="4"></td>
+                    <td>R 723.80</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Click to confirm and process your order:</td>
+					<td>
+						<input type="button" value="Total Price">
+					</td>
+                    <td> 
+                        R 1025.70
+                    </td>
+                </tr>
+            </table> -->
+			<table>
+				<caption>Product Summary</caption>
+				<header>
+					<th>Description</th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+				</header>
+				<tr>
+                    <td><a href="female.html">Female Ski Jackets</a></td>
+					<td> 
+                        <select id="sizeF">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+					<td>
+                        <select id="colorF">
+                            <option value="red">Red</option>
+                            <option value="pink">Pink</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </td>
+					<td>
+						150.95
+					</td>
+					<td>
+						<input id="quantityF" type="number" value="2">
+					</td>
+                    <td id="totalF"></td>
+				</tr>	
+				<tr>
+					<td><a href="male.html">Male Ski Jackets</a></td>
+					<td>
+                        <select id="sizeM">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+					<td>
+                        <select id="colorM">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="white">White</option>
+                        </select>
+                    </td>
+					<td>
+						180.95
+					</td>
+					<td>
+						<input id="quantityM" type="number" value="4">
+					</td>
+                    <td id="totalM"></td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						Click to confirm and process your order:
+					</td>
+					<td>
+						<input id="totalOrderBtn" type="button" value="Total Price">
+					</td>
+                    <td id="totalOrder"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<footer>
+		<p class="copyright">© 2020 Swegga Fashion – ANEEQ BASSADIEN</p>
+	</footer>
+</div>
+<script src="./script/script.js"></script>
+</body>
+</html>
