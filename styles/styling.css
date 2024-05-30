@@ -35,7 +35,7 @@ body {
 	float: left; 
 }
 
-/* #sweggaImg{
+#sweggaImg{
 	height: 350px;
 	width: 150px;
 }
@@ -43,7 +43,12 @@ body {
 #deliveryImg{
 	height: 85px;
 	width: 300px;
-} */
+}
+
+#linksImg{
+	height: 56px;
+	width: 560px;
+}
 
 .copyright {
     font-size: 90%;
@@ -55,7 +60,7 @@ body {
 
 table{
 	border: 1px solid black;
-	width: 100%;
+	width: auto;
     border-collapse: collapse;
 }
 
