@@ -27,5 +27,7 @@ function calcTotal(){
 calcPriceF();
 calcPriceM();
 
-totalOrderBtn.addEventListener('click', calcTotal())
+quantityF.addEventListener('change', calcPriceF)
+quantityM.addEventListener('change', calcPriceM)
+totalOrderBtn.addEventListener('click', calcTotal)
 
